@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--待完善：让取消和确定横向排放-->
+    <TextView
+        android:text="标签"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:text="工作记录"
+        android:checked="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:text="生活记录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="情感记录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="新增标签"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:text="@string/Button_name3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tz_button1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="@string/Button_name4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tz_button2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_toRightOf="@+id/tz_button1"/>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mydemo1</string>
+    <string name="tv1">便携备忘录</string>
+    <string name="Button_name1">添加标签</string>
+    <string name="Button_name2">添加提醒</string>
+    <string name="et1">输入备忘</string>
+    <string name="Button_name3">取消</string>
+    <string name="Button_name4">确定</string>
+</resources>
