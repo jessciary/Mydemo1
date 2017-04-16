@@ -28,7 +28,6 @@ public class tiaozhuanActivity extends Activity{
         setContentView(R.layout.activity_main);
         //通过findViewById添加到activity中
         button3 =(Button)findViewById(R.id.tz_button1);
-        button4 =(Button)findViewById(R.id.tz_button2);
         /*通过匿名内部类实现监听*/
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -39,17 +38,16 @@ public class tiaozhuanActivity extends Activity{
                 finish();    //结束当前页面
             }
         });
+
+        button4 =(Button)findViewById(R.id.tz_button2);
         button4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 finish();    //实现功能：点击按钮，结束当前页面
             }
         });
 
-        setContentView(R.layout.tiaozhuan1);
+        setContentView(R.layout.tiaozhuan);
         cb1=(CheckBox)findViewById(R.id.checkBox1);   //初始化
-        cb2=(CheckBox)findViewById(R.id.checkBox2);
-        cb3=(CheckBox)findViewById(R.id.checkBox3);
-        cb4=(CheckBox)findViewById(R.id.checkBox4);
         //设置监听器
         cb1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -62,6 +60,8 @@ public class tiaozhuanActivity extends Activity{
                 }
             }
         });
+
+        cb2=(CheckBox)findViewById(R.id.checkBox2);
         cb2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -73,6 +73,8 @@ public class tiaozhuanActivity extends Activity{
                 }
             }
         });
+
+        cb3=(CheckBox)findViewById(R.id.checkBox3);
         cb3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -84,6 +86,8 @@ public class tiaozhuanActivity extends Activity{
                 }
             }
         });
+
+        cb4=(CheckBox)findViewById(R.id.checkBox4);
         cb4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

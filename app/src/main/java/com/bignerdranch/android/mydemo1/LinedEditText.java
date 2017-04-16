@@ -10,7 +10,7 @@ import android.widget.EditText;
  * Created by jiangxinyi on 2017/4/15.
  */
 
-//加多行下划线的EditText
+//自定义加多行下划线的EditText
 public class LinedEditText extends EditText {
     private Paint linePaint;
     private float margin;

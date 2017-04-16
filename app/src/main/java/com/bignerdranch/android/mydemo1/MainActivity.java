@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     //初始化
     private ImageButton imgButton;
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -28,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
     }
 }

@@ -3,6 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
+    //图片jpg修改为png后添加如下语句
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+    }
     defaultConfig {
         applicationId "com.bignerdranch.android.mydemo1"
         minSdkVersion 16
