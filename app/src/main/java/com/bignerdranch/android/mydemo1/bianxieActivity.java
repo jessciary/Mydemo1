@@ -1,11 +1,14 @@
 package com.bignerdranch.android.mydemo1;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * Created by jiangxinyi on 2017/4/15.
@@ -20,18 +23,17 @@ public class bianxieActivity extends Activity{
     private ImageButton music;
     private ImageButton luyin;
     private ImageButton vedio;
+    String [] multi_list={"工作记录","生活记录","情感记录","新增标签"};
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.bianxie);
         //通过findViewById添加到activity中
         button1 =(Button)findViewById(R.id.bx_button1);
         /*通过匿名内部类实现监听*/
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-                //实现功能：点击按钮，跳转到tiaozhaun界面
-                Intent intent =new Intent(bianxieActivity.this,tiaozhuanActivity.class);
-                startActivityForResult(intent,1) ;    //有返回值的跳转
+                showDialog();
             }
         });
 
@@ -86,5 +88,34 @@ public class bianxieActivity extends Activity{
         if(requestCode ==1&&resultCode ==2){
             //待完善功能：将新的备忘录添加到分类中
         }
+    }
+
+    //显示对话框
+    private void showDialog(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setTitle("标签");
+        builder.setMultiChoiceItems(multi_list, null, new DialogInterface.OnMultiChoiceClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                if(isChecked ){
+                    //Toast.makeText(bianxieActivity.this,"添加到工作记录中",multi_list[which]
+                    //Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //点击按钮，确定添加到该分类中
+            }
+        });
+        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();  //点击按钮，退出对话框
+            }
+        }) ;
+        AlertDialog dialog=builder.create();
+        dialog.show();
     }
 }

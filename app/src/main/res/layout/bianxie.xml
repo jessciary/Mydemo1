@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
     <Button
         android:text="@string/Button_name1"
+        android:drawableLeft="@drawable/ic_biaoqian_name"
+        android:background="#FFFFFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bx_button1"
         android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentLeft="true"/>
 
     <Button
         android:text="@string/Button_name2"
+        android:drawableLeft="@drawable/ic_tixing_name"
+        android:background="#FFFFFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bx_button2"
@@ -24,8 +27,18 @@
         android:layout_alignBottom="@+id/bx_button1"
         android:layout_toRightOf="@+id/bx_button1"
         android:layout_toEndOf="@+id/bx_button1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginLeft="20dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_share_name"
+        android:background="#FFFFFF"
+        android:id="@+id/imageButton2"
+        android:layout_toRightOf="@+id/bx_button2"
+        android:layout_toEndOf="@+id/bx_button2"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="15dp"/>
 
     <com.bignerdranch.android.mydemo1.LinedEditText
         android:layout_width="match_parent"
@@ -33,10 +46,55 @@
         android:layout_below="@+id/bx_button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:height="330dp"
+        android:height="400dp"
         android:id="@+id/et1"
         android:hint="@string/et1"
         android:gravity="left"
         android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_picture_name"
+        android:id="@+id/imageButton3"
+        android:layout_below="@+id/et1"
+        android:background="#FFFFFF"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_music_name"
+        android:id="@+id/imageButton4"
+        android:layout_below="@+id/et1"
+        android:background="#FFFFFF"
+        android:layout_alignBaseline="@+id/imageButton3"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_luyin_name"
+        android:id="@+id/imageButton5"
+        android:layout_below="@+id/et1"
+        android:background="#FFFFFF"
+        android:layout_alignBaseline="@+id/imageButton4"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vedio_name"
+        android:layout_below="@+id/et1"
+        android:background="#FFFFFF"
+        android:id="@+id/imageButton6"
+        android:layout_alignBaseline="@+id/imageButton5"
+        android:layout_alignBottom="@+id/imageButton5"
+        android:layout_toRightOf="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"/>
+
 
 </RelativeLayout>

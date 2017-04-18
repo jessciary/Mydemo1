@@ -17,8 +17,6 @@
         </activity>
         <activity android:name=".bianxieActivity">
         </activity>
-        <activity android:name=".tiaozhuanActivity">
-        </activity>
     </application>
 
 </manifest>
