@@ -32,12 +32,12 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_share_name"
+        android:src="@drawable/ic_share_name"
         android:background="#FFFFFF"
         android:id="@+id/imageButton2"
         android:layout_toRightOf="@+id/bx_button2"
         android:layout_toEndOf="@+id/bx_button2"
-        android:layout_marginLeft="145dp"
+        android:layout_marginLeft="85dp"
         android:layout_marginTop="15dp"/>
 
     <com.bignerdranch.android.mydemo1.LinedEditText
@@ -46,7 +46,7 @@
         android:layout_below="@+id/bx_button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:height="400dp"
+        android:height="495dp"
         android:id="@+id/et1"
         android:hint="@string/et1"
         android:gravity="left"
@@ -55,7 +55,7 @@
     <ImageButton
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_picture_name"
+        android:src="@drawable/ic_picture_name"
         android:id="@+id/imageButton3"
         android:layout_below="@+id/et1"
         android:background="#FFFFFF"/>
@@ -63,7 +63,7 @@
     <ImageButton
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_music_name"
+        android:src="@drawable/ic_music_name"
         android:id="@+id/imageButton4"
         android:layout_below="@+id/et1"
         android:background="#FFFFFF"
@@ -75,7 +75,7 @@
     <ImageButton
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_luyin_name"
+        android:src="@drawable/ic_luyin_name"
         android:id="@+id/imageButton5"
         android:layout_below="@+id/et1"
         android:background="#FFFFFF"
@@ -87,7 +87,7 @@
     <ImageButton
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_vedio_name"
+        android:src="@drawable/ic_vedio_name"
         android:layout_below="@+id/et1"
         android:background="#FFFFFF"
         android:id="@+id/imageButton6"
@@ -95,6 +95,15 @@
         android:layout_alignBottom="@+id/imageButton5"
         android:layout_toRightOf="@+id/imageButton5"
         android:layout_toEndOf="@+id/imageButton5"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:layout_alignTop="@+id/et1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
 
 </RelativeLayout>
